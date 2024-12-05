@@ -107,3 +107,5 @@ for lokasi, data in data_panen.items():
 print ("Melakukan Perubahan")
 print ("Perubahan baru buat konflik")
 print ("Perubahan konflik di baru")
+print ("buat konflik")
+print ("buat konflik baru")
