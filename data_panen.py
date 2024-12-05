@@ -55,8 +55,8 @@ hasil_jagung_lokasi2 = data_panen['lokasi2']['hasil_panen']['jagung']
 print(f"Hasil panen jagung dari lokasi2 (Kebun B): {hasil_jagung_lokasi2}")
 
 # # Mendapatkan nama lokasi dari lokasi3
-# nama_lokasi3 = data_panen['lokasi3']['nama_lokasi']
-# print(f"Nama lokasi dari lokasi3: {nama_lokasi3}")
+nama_lokasi3 = data_panen['lokasi3']['nama_lokasi']
+print(f"Nama lokasi dari lokasi3: {nama_lokasi3}")
 
 # # Menyimpan hasil panen padi dan kedelai ke dalam dictionary baru
 # hasil_panen_padi_kedelai = {}
