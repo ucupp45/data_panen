@@ -104,8 +104,5 @@ for lokasi, data in data_panen.items():
     else:
         print(f"Lokasi {nama_lokasi} dalam kondisi baik.")
         
-print ("Melakukan Perubahan")
-print ("Perubahan baru buat konflik")
-print ("Perubahan konflik di baru")
-print ("buat konflik")
-print ("buat konflik baru")
+print ("Nama : Yusup, NRP : 195")
+print ("ITENAS Bandung")
