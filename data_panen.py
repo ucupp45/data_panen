@@ -62,8 +62,8 @@ print(f"Nama lokasi dari lokasi3: {nama_lokasi3}")
 padi = {}
 kedelai = {}
 
-# # Menyimpan hasil panen padi dan kedelai ke dalam dictionary baru
-# hasil_panen_padi_kedelai = {}
+# Menyimpan hasil panen padi dan kedelai ke dalam dictionary baru
+hasil_panen_padi_kedelai = {}
 
 # for lokasi, data in data_panen.items():
 #     nama_lokasi = data['nama_lokasi']
