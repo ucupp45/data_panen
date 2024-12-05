@@ -62,35 +62,35 @@ print(f"Nama lokasi dari lokasi3: {nama_lokasi3}")
 padi = {}
 kedelai = {}
 
+for lokasi, data in data_panen.items():
+    nama_lokasi = data['nama_lokasi']
+    hasil_panen_padi_kedelai[nama_lokasi] = {
+        'padi': data['hasil_panen']['padi'],
+        'kedelai': data['hasil_panen']['kedelai']
+    }
+
 # Menyimpan hasil panen padi dan kedelai ke dalam dictionary baru
 hasil_panen_padi_kedelai = {}
 
-# for lokasi, data in data_panen.items():
-#     nama_lokasi = data['nama_lokasi']
-#     hasil_panen_padi_kedelai[nama_lokasi] = {
-#         'padi': data['hasil_panen']['padi'],
-#         'kedelai': data['hasil_panen']['kedelai']
-#     }
-
-# # Menampilkan hasil
-# print("Hasil Panen Padi dan Kedelai:")
-# for nama_lokasi, hasil in hasil_panen_padi_kedelai.items():
-#     print(f"{nama_lokasi}: Padi = {hasil['padi']}, Kedelai = {hasil['kedelai']}")
+# Menampilkan hasil
+print("Hasil Panen Padi dan Kedelai:")
+for nama_lokasi, hasil in hasil_panen_padi_kedelai.items():
+    print(f"{nama_lokasi}: Padi = {hasil['padi']}, Kedelai = {hasil['kedelai']}")
 
 
-# for lokasi, data in data_panen.items():
-#     nama_lokasi = lokasi  # Menggunakan nama lokasi sebagai kunci
-#     padi[nama_lokasi] = data['hasil_panen']['padi']
-#     kedelai[nama_lokasi] = data['hasil_panen']['kedelai']
+for lokasi, data in data_panen.items():
+    nama_lokasi = lokasi  # Menggunakan nama lokasi sebagai kunci
+    padi[nama_lokasi] = data['hasil_panen']['padi']
+    kedelai[nama_lokasi] = data['hasil_panen']['kedelai']
 
-# # Menampilkan hasil
-# print("Jumlah Hasil Panen Padi:")
-# for lokasi, jumlah in padi.items():
-#     print(f"{lokasi}: {jumlah}")
+# Menampilkan hasil
+print("Jumlah Hasil Panen Padi:")
+for lokasi, jumlah in padi.items():
+    print(f"{lokasi}: {jumlah}")
 
-# print("\nJumlah Hasil Panen Kedelai:")
-# for lokasi, jumlah in kedelai.items():
-#     print(f"{lokasi}: {jumlah}")
+print("\nJumlah Hasil Panen Kedelai:")
+for lokasi, jumlah in kedelai.items():
+    print(f"{lokasi}: {jumlah}")
     
 # Mengevaluasi setiap lokasi berdasarkan hasil panen
 for lokasi, data in data_panen.items():
