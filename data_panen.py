@@ -92,14 +92,14 @@ hasil_panen_padi_kedelai = {}
 # for lokasi, jumlah in kedelai.items():
 #     print(f"{lokasi}: {jumlah}")
     
-# # Mengevaluasi setiap lokasi berdasarkan hasil panen
-# for lokasi, data in data_panen.items():
-#     nama_lokasi = data['nama_lokasi']
-#     hasil_padi = data['hasil_panen']['padi']
-#     hasil_jagung = data['hasil_panen']['jagung']
+# Mengevaluasi setiap lokasi berdasarkan hasil panen
+for lokasi, data in data_panen.items():
+    nama_lokasi = data['nama_lokasi']
+    hasil_padi = data['hasil_panen']['padi']
+    hasil_jagung = data['hasil_panen']['jagung']
     
-#     # Percabangan untuk menentukan status lokasi
-#     if hasil_padi > 1300 or hasil_jagung > 800:
-#         print(f"Lokasi {nama_lokasi} memerlukan perhatian khusus.")
-#     else:
-#         print(f"Lokasi {nama_lokasi} dalam kondisi baik.")
+    # Percabangan untuk menentukan status lokasi
+    if hasil_padi > 1300 or hasil_jagung > 800:
+        print(f"Lokasi {nama_lokasi} memerlukan perhatian khusus.")
+    else:
+        print(f"Lokasi {nama_lokasi} dalam kondisi baik.")
