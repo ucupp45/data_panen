@@ -58,6 +58,10 @@ print(f"Hasil panen jagung dari lokasi2 (Kebun B): {hasil_jagung_lokasi2}")
 nama_lokasi3 = data_panen['lokasi3']['nama_lokasi']
 print(f"Nama lokasi dari lokasi3: {nama_lokasi3}")
 
+# Membuat variabel terpisah untuk menyimpan hasil panen padi dan kedelai
+padi = {}
+kedelai = {}
+
 # # Menyimpan hasil panen padi dan kedelai ke dalam dictionary baru
 # hasil_panen_padi_kedelai = {}
 
@@ -73,9 +77,6 @@ print(f"Nama lokasi dari lokasi3: {nama_lokasi3}")
 # for nama_lokasi, hasil in hasil_panen_padi_kedelai.items():
 #     print(f"{nama_lokasi}: Padi = {hasil['padi']}, Kedelai = {hasil['kedelai']}")
 
-# # Membuat variabel terpisah untuk menyimpan hasil panen padi dan kedelai
-# padi = {}
-# kedelai = {}
 
 # for lokasi, data in data_panen.items():
 #     nama_lokasi = lokasi  # Menggunakan nama lokasi sebagai kunci
