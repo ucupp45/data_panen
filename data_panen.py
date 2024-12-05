@@ -50,9 +50,9 @@ for lokasi, data in data_panen.items():
         print(f"    - {komoditas.capitalize()}: {jumlah}")
     print()
     
-# # Mendapatkan hasil panen jagung dari lokasi2
-# hasil_jagung_lokasi2 = data_panen['lokasi2']['hasil_panen']['jagung']
-# print(f"Hasil panen jagung dari lokasi2 (Kebun B): {hasil_jagung_lokasi2}")
+# Mendapatkan hasil panen jagung dari lokasi2
+hasil_jagung_lokasi2 = data_panen['lokasi2']['hasil_panen']['jagung']
+print(f"Hasil panen jagung dari lokasi2 (Kebun B): {hasil_jagung_lokasi2}")
 
 # # Mendapatkan nama lokasi dari lokasi3
 # nama_lokasi3 = data_panen['lokasi3']['nama_lokasi']
